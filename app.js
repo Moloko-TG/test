@@ -1,0 +1,14 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Home');
+});
+
+app.get('/page1', (req, res) => {
+    res.send('Page 1');
+});
+
+app.listen(3030, () => {
+    console.log('http://localhost:3030/');
+});
